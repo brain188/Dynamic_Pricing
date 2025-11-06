@@ -1,0 +1,43 @@
+pandas
+numpy
+scikit-learn
+xgboost
+lightgbm
+prophet
+matplotlib
+seaborn
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+joblib
+pydantic
+python-dotenv
+
+# Core Python Data Science Libraries
+pandas
+numpy
+scikit-learn
+xgboost
+lightgbm
+joblib
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# FastAPI Backend
+fastapi
+uvicorn
+
+# Jupyter & Development
+jupyter
+notebook
+ipykernel
+
+# utilities
+python-dotenv
+
+# testing
+pytest

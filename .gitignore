@@ -1,0 +1,40 @@
+__pycache__/
+.env
+.venv/
+*.pyc
+.ipynb_checkpoints/
+/backend/__pycache__/
+/frontend/react_native_app/node_modules/
+/models/
+
+
+# Dependencies
+venv/
+.venv/
+env/
+*.pyc
+__pycache__/
+.ipynb_checkpoints
+
+# Data
+data/processed/*.csv
+data/raw/dynamic_pricing.csv 
+
+# Models and Artifacts
+models/*.pkl
+models/*.joblib
+models/*.h5
+mlruns/
+wandb/
+
+# Logs and Reports
+logs/*.log
+reports/
+
+# Configuration and Environment Secrets
+.env
+config.yaml # Only include if it contains secrets or machine-specific paths
+
+.env.example
+.logs
+.logs/*
