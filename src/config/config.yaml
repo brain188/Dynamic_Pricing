@@ -1,0 +1,16 @@
+paths:
+  raw_data: "data/raw/dynamic_pricing.csv"
+  processed_data: "data/processed/dynamic_pricing_processed.csv"
+  model_dir: "models/"
+  log_dir: "logs/"
+
+database:
+  db_url: ${DB_URL}
+
+mlflow:
+  tracking_uri: "http://127.0.0.1:5000"
+  experiment_name: "dynamic_pricing_baseline"
+
+model_params:
+  random_state: 42
+  test_size: 0.2

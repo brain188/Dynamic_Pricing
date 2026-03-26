@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.env
+logs/
+data/processed/
+.venv/
+.vscode/
+.ipynb_checkpoints/
+mlflow.db
+mlruns/
+tasklist.md
+scripts/
+architecture_diagram/
+visualization/

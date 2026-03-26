@@ -1,0 +1,74 @@
+# Core Data Science
+pandas
+numpy
+scipy                        # stats tests: Shapiro-Wilk, Mann-Whitney, Kruskal-Wallis, Wilcoxon
+statsmodels                  # OLS assumptions: Durbin-Watson, Breusch-Pagan, VIF, ADF/KPSS, STL
+
+# Machine Learning
+scikit-learn
+xgboost
+lightgbm
+joblib
+
+# Time Series
+prophet
+
+# Hyperparameter Optimization
+optuna                       # Bayesian tuning for XGBoost/LightGBM (100-trial search)
+
+# Reinforcement Learning
+gymnasium                    # standard RL environment interface (replaces gym)
+stable-baselines3[extra]     # PPO, A2C agents + TensorBoard logging
+shimmy                       # gymnasium compatibility shim for stable-baselines3
+
+# Explainability
+shap                         # SHAP values, beeswarm, waterfall, dependence plots
+
+# Visualization
+matplotlib
+seaborn
+plotly
+missingno                    # missing value matrix / bar charts for EDA
+
+# FastAPI Backend
+fastapi
+uvicorn[standard]            # [standard] adds websockets + watchfiles for hot reload
+pydantic
+pydantic-settings            # load config from .env into Pydantic BaseSettings
+python-multipart             # required for FastAPI file upload / form parsing
+slowapi                      # rate limiting middleware for FastAPI
+httpx                        # async HTTP client — used in tests and for calling external APIs
+
+# Database & Migrations
+sqlalchemy
+psycopg2-binary
+alembic                      # database migration management (schema versioning)
+
+# Experiment Tracking & Model Registry
+mlflow                       # experiment tracking, model registry, artifact store
+
+# Configuration & Utilities
+
+python-dotenv
+pyyaml                       # load src/config/config.yaml and logging_config.yaml
+requests                     # standard HTTP client (used in utilities / health checks)
+
+
+# Jupyter & Development
+jupyter
+notebook
+ipykernel
+ipywidgets                   # interactive widgets in notebooks (progress bars, sliders)
+tqdm                         # progress bars in training loops and data pipelines
+
+
+# Code Quality & Linting
+black                        # code formatter
+flake8                       # linter
+isort                        # import sorter
+pre-commit                   # git hook runner for black/flake8/isort
+
+# Testing
+pytest
+pytest-asyncio               # async test support for FastAPI endpoints
+pytest-cov                   # coverage reporting (target: >80%)
