@@ -48,11 +48,9 @@ alembic                      # database migration management (schema versioning)
 mlflow                       # experiment tracking, model registry, artifact store
 
 # Configuration & Utilities
-
 python-dotenv
 pyyaml                       # load src/config/config.yaml and logging_config.yaml
 requests                     # standard HTTP client (used in utilities / health checks)
-
 
 # Jupyter & Development
 jupyter
@@ -60,7 +58,6 @@ notebook
 ipykernel
 ipywidgets                   # interactive widgets in notebooks (progress bars, sliders)
 tqdm                         # progress bars in training loops and data pipelines
-
 
 # Code Quality & Linting
 black                        # code formatter

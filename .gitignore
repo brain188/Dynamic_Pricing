@@ -12,3 +12,10 @@ tasklist.md
 scripts/
 architecture_diagram/
 visualization/
+/backend/__pycache__/
+/frontend/react_native_app/node_modules/
+models/*.pkl
+models/*.joblib
+models/*.h5
+wandb/
+.logs/
