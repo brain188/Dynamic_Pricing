@@ -10,8 +10,6 @@ mlflow.db
 mlruns/
 tasklist.md
 scripts/
-architecture_diagram/
-visualization/
 /backend/__pycache__/
 /frontend/react_native_app/node_modules/
 models/*.pkl
