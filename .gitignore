@@ -8,6 +8,8 @@ data/processed/
 .ipynb_checkpoints/
 mlflow.db
 mlruns/
+mlartifacts/
+mlartifacts
 tasklist.md
 scripts/
 /backend/__pycache__/
@@ -15,5 +17,7 @@ scripts/
 models/*.pkl
 models/*.joblib
 models/*.h5
+models/encoders/
 wandb/
+visualization/model_performance/
 .logs/

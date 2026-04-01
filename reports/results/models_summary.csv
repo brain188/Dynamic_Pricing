@@ -1,0 +1,5 @@
+model_name,RMSE_test,MAE_test,R2_test,MAPE_test,n_features
+Linear Regression,0.2228,0.1724,0.8782,127.7046,26
+Random Forest,0.2249,0.1688,0.8759,116.5484,26
+XGBoost,0.2233,0.1731,0.8776,139.4687,26
+LightGBM,0.2243,0.1717,0.8766,144.1467,26

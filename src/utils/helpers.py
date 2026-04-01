@@ -1,10 +1,16 @@
-import joblib
-import os
 import logging
-import numpy as np
-from typing import Any, Dict, List, Tuple
-from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
-from src.utils.config import MODELS_DIR, REPORTS_DIR, LOG_FILE
+import os
+from typing import Any, Dict, List, Tuple  # noqa: F401
+
+import joblib  # noqa: F401
+import numpy as np  # noqa: F401
+from sklearn.metrics import (  # noqa: F401
+    mean_absolute_error,
+    mean_squared_error,
+    r2_score,
+)
+
+from src.utils.config import LOG_FILE, MODELS_DIR, REPORTS_DIR  # noqa: F401
 
 logger = logging.getLogger(__name__)
 
@@ -15,13 +21,11 @@ def setup_logging():
     """
     logging.basicConfig(
         level=logging.INFO,
-        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-        handlers=[
-            logging.FileHandler(LOG_FILE),
-            logging.StreamHandler()
-        ]
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        handlers=[logging.FileHandler(LOG_FILE), logging.StreamHandler()],
     )
     logging.info("Logging setup complete.")
+
 
 def save_artifact(obj: Any, filename: str, subdir: str = MODELS_DIR):
     """
@@ -36,6 +40,7 @@ def save_artifact(obj: Any, filename: str, subdir: str = MODELS_DIR):
     except Exception as e:
         logger.error(f"Failed to save artifact {filename}: {e}")
         return False
+
 
 def load_artifact(filename: str, subdir: str = MODELS_DIR) -> Any:
     """
@@ -53,6 +58,7 @@ def load_artifact(filename: str, subdir: str = MODELS_DIR) -> Any:
         logger.error(f"Failed to load artifact {filename}: {e}")
         return None
 
+
 def calculate_metrics(y_true: np.ndarray, y_pred: np.ndarray) -> Dict[str, float]:
     """
     Calculates key regression metrics: RMSE, MAE, R2, and MAPE.
@@ -61,15 +67,16 @@ def calculate_metrics(y_true: np.ndarray, y_pred: np.ndarray) -> Dict[str, float
     mae = mean_absolute_error(y_true, y_pred)
     r2 = r2_score(y_true, y_pred)
     mape = np.mean(np.abs((y_true - y_pred) / y_true)) * 100
-    
+
     metrics = {
-        'RMSE': rmse,
-        'MAE': mae,
-        'R2': r2,
-        'MAPE': mape  # Mean Absolute Percentage Error
+        "RMSE": rmse,
+        "MAE": mae,
+        "R2": r2,
+        "MAPE": mape,  # Mean Absolute Percentage Error
     }
-    
+
     return metrics
+
 
 def log_metrics(model_name: str, metrics: Dict[str, float]):
     """Logs model performance metrics."""

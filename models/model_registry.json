@@ -1,0 +1,35 @@
+{
+  "best_model": {
+    "name": "XGBoost",
+    "version": "1.0.0",
+    "path": "C:\\Users\\BRAIN\\Desktop\\ML\\dynamic_pricing\\models\\xgboost_best.pkl",
+    "rmse": 0.2233,
+    "mae": 0.1731,
+    "r2": 0.8776,
+    "n_features": 26,
+    "selected_for_deployment": true,
+    "selection_reason": "Best SHAP interpretability; competitive RMSE on held-out test set."
+  },
+  "all_models": {
+    "Linear Regression": {
+      "path": "models/linear_best.pkl",
+      "rmse": 0.2228,
+      "r2": 0.8782
+    },
+    "Random Forest": {
+      "path": "models/rf_best.pkl",
+      "rmse": 0.2249,
+      "r2": 0.8759
+    },
+    "XGBoost": {
+      "path": "models/xgboost_best.pkl",
+      "rmse": 0.2233,
+      "r2": 0.8776
+    },
+    "LightGBM": {
+      "path": "models/lgbm_best.pkl",
+      "rmse": 0.2243,
+      "r2": 0.8766
+    }
+  }
+}
