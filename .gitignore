@@ -20,3 +20,5 @@ models/*.h5
 models/encoders/
 wandb/
 .logs/
+tests_failure.log
+.coverage
