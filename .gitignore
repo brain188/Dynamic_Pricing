@@ -19,5 +19,4 @@ models/*.joblib
 models/*.h5
 models/encoders/
 wandb/
-visualization/model_performance/
 .logs/
